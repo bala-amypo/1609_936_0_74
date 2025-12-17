@@ -20,25 +20,31 @@ public class StudentEntity{
      public void setPassword(String password){
         this.password=password;
     }
-    public void setCreatedAt(String createdAt){
+    public void setCreatedAt(Date createdAt){
         this.createdAt=createdAt;
     }
     public Integer getId{
-        return this.id;
+        return id;
     }
     public String getEmail{
-        return this.email;
+        return email;
     }
     public String getPassword{
-        return this.password;
+        return password;
     }
-    public String getEmail{
-        return this.email;
+   
+    public Date getCreatedAt{
+        return createdAt;
     }
-    public String getCreatedAt{
-        return this.createdAt;
+    public StudentEntity(Integer id,String username,String email,String password,Date createdAt){
+        this.name=name;
+        this.email=email;
+        this.password=password;
+        this.createdAt=createdAt;
     }
-    public StudentEntity(Integer id,String username,String email,String password,String)
+    public StudentEntity(){
+        
+    }
 
 
 
