@@ -45,7 +45,7 @@ public class StudentEntity{
         return createdAt;
     }
     public StudentEntity(Integer id,String username,String email,String password,Date createdAt){
-        this.username=usernamename;
+        this.username=username;
         this.email=email;
         this.password=password;
         this.createdAt=createdAt;
