@@ -12,7 +12,6 @@ public class StudentEntity{
     private String username;
     private String email;
     private String password;
-    private Date dob;
     private Date createdAt;
     public void setId(Integer id){
         this.id=id;
