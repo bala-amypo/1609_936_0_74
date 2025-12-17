@@ -8,7 +8,21 @@ public class StudentEntity{
     private String password;
     private Date dob;
     private Date createdAt;
-    public Integer setId()
+    public void setId(Integer id){
+        this.id=id;
+    }
+    public void setusername(String username){
+        this.username=username;
+    }
+    public void setemail(String email){
+        this.email=email;
+    }
+     public void setpassword(String password){
+        this.password=password;
+    }
+    public void setcreatedAt(String createdAt){
+        this.password=password;
+    }
 
 
 
