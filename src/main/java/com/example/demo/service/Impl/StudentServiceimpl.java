@@ -4,6 +4,7 @@ import org.springframework.stereotype.Service;
 import com.example.demo.service.StudentService;
 import com.example.demo.repository.StudentRepository;
 import com.example.demo.entity.StudentEntity;
+
 @Service
 public class StudentServiceimpl implements StudentService{
    @Autowired StudentRepository student;//  acces the method in diff files
@@ -13,7 +14,6 @@ public class StudentServiceimpl implements StudentService{
    //deleteById();
    //existById();
    @Override
-
     public StudentEntity postdata(StudentEntity stu){
         return student.save(stu);
 
