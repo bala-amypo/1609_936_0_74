@@ -18,7 +18,7 @@ public class StudentServiceimpl implements StudentService{
         return student.save(stu);
     }
     public StudentEntity postdata(StudentEntity stu){
-        return student.s(stu);
+        return student.findAll(stu);
     }
 
 }
