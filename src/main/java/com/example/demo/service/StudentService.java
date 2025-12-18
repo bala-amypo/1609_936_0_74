@@ -5,5 +5,5 @@ import java.util.List;
 public interface StudentService{
     StudentEntity postdata(StudentEntity stu);
     List<StudentEntity>getdata();
-     StudentEntity String deletedata(int id);
+    String deletedata(int id);
 }
