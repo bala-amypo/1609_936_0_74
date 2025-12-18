@@ -13,10 +13,10 @@ import jakarta.validation.Valid;
 import java.util.List;
 @RestController
 public class validationController{
-    @Autowired validationService serv;  
+    @Autowired validationService ser;  
     @PostMapping("/post2")
     public validationEntity sendData(@Valid @RequestBody validationEntity stu){
-        return serv.postdata(stu);
+        return ser.postdata(stu);
     }
 //     @GetMapping("/get2")
 //     public List<validationEntity> getData(){
