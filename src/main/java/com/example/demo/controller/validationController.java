@@ -9,12 +9,13 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.beans.factory.annotation.Autowired;
 import com.example.demo.service.validationService;
 import com.example.demo.entity.validationEntity;
+import jakarta.validation.Valid;
 import java.util.List;
 @RestController
 public class validationController{
     @Autowired validationService serv;  
     @PostMapping("/post2")
-    public validationEntity sendData(@RequestBody validationEntity val){
+    public validationEntity sendData(@Valid @RequestBody validationEntity val){
         return serv.postdata(val);
     }
 //     @GetMapping("/get2")
