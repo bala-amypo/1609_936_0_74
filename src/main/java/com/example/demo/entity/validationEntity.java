@@ -6,6 +6,7 @@ import jakarta.persistence.GenerationType;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Size;
 import jakarta.validation.constraints.Email;
+import jakarta.validation.constraints.Max;
 @Entity
 public class validationEntity{
     @Id
@@ -16,7 +17,7 @@ public class validationEntity{
     private String username;
     @Email(message="email is not valid")
     private String email;
-    @Size
+    @Max(6)
     private String password;
     private Interger age;
     public void setId(Long id){
