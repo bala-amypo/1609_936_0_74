@@ -2,6 +2,7 @@ package com.example.demo.controller;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.beans.factory.annotation.Autowired;
 import com.example.demo.service.StudentService;
@@ -18,9 +19,9 @@ public class StudentController{
     public List<StudentEntity> getData(){
         return ser.getdata();
     }
-    @DeleteMapping("/post")
-    public StudentEntity sendData(@RequestBody StudentEntity stu){
-        return ser.postdata(stu);//to ser calling the service layer
+    @DeleteMapping("/del{id}")
+    public String DeleteData(@PathVariable int id){
+        return ser.deletedata(id);
     }
 
 
