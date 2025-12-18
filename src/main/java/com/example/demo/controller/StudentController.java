@@ -1,6 +1,7 @@
 package com.example.demo.controller;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.beans.factory.annotation.Autowired;
 import com.example.demo.service.StudentService;
@@ -13,7 +14,7 @@ public class StudentController{
         return ser.postdata(stu);//to ser calling the service layer
     }
     @GetMapping("/get")
-    public StudentEntity getData1(){
+    public StudentEntity getData(){
         return ser.getdata();
     }
 
