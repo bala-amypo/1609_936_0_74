@@ -27,9 +27,9 @@ public class StudentServiceimpl implements StudentService{
         return "deleted successfully";
     }
     @Override
-    public StudentEntity putdata(int id,StudentEntity stu){
-        student.findById(id,stu);
-        return stu;
+    public StudentEntity putgetdata(int id){
+       return student.findById(id);
+    
     }
 
 }
