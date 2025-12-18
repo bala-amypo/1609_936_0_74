@@ -15,7 +15,7 @@ public class validationController{
     @Autowired validationService serv;  
     @PostMapping("/post2")
     public validationEntity sendData(@RequestBody validationEntity val){
-        return serv.postdata(val);//to ser calling the service layer
+        return serv.postdata(val);
     }
 //     @GetMapping("/get2")
 //     public List<validationEntity> getData(){
@@ -33,4 +33,4 @@ public class validationController{
 //     public validationEntity putupdateData(@PathVariable int id,@RequestBody validationEntity vali){
 //         return serv.putupdatedata(id,vali);
 //     }
-// }
+// }//
