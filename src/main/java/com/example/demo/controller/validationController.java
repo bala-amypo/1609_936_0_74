@@ -13,24 +13,24 @@ import java.util.List;
 @RestController
 public class validationController{
     @Autowired validationService serv;  
-    @PostMapping("/post")
+    @PostMapping("/post2")
     public validationEntity sendData(@RequestBody validationEntity val){
-        return ser.postdata(val);//to ser calling the service layer
+        return serv.postdata(val);//to ser calling the service layer
     }
-    @GetMapping("/get")
+    @GetMapping("/get1")
     public List<validationEntity> getData(){
-        return ser.getdata();
+        return serv.getdata();
     }
-    @DeleteMapping("/del/{id}")
+    @DeleteMapping("/del/{id}2")
     public String DeleteData(@PathVariable int id){
-        return ser.deletedata(id);
+        return serv.deletedata(id);
     }
-    @GetMapping("/putget/{id}")
-    public StudentEntity putgetData(@PathVariable int id){  
-        return ser.putgetdata(id);
+    @GetMapping("/putget/{id}2")
+    public validationEntity putgetData(@PathVariable int id){  
+        return serv.putgetdata(id);
     }
-    @PutMapping("/putupdate/{id}")
-    public StudentEntity putupdateData(@PathVariable int id,@RequestBody StudentEntity std){
-        return ser.putupdatedata(id,std);
+    @PutMapping("/putupdate/{id}2")
+    public validationEntity putupdateData(@PathVariable int id,@RequestBody validationEntity vali){
+        return serv.putupdatedata(id,vali);
     }
 }

@@ -14,8 +14,8 @@ public class validationServiceimpl implements validationService{
    //deleteById();
    //existById();
    @Override
-    public validationEntity postdata(validationEntity val){
-        return valid.save(val);
+    public validationEntity postdata(validationEntity stu){
+        return valid.save(stu);
     }
     @Override
     public List<validationEntity>getdata(){
@@ -32,10 +32,10 @@ public class validationServiceimpl implements validationService{
     
     }
     @Override
-    public validationEntity putupdatedata(int id,validationEntity vali){
+    public validationEntity putupdatedata(int id,validationEntity std){
         if(valid.existsById(id)){//checking where it isprsent or not in spfici row
             std.setId(id);//settting the value to that roe
-            return valid.save(vali);//return the value
+            return valid.save(std);//return the value
         }
         return null;
     }
