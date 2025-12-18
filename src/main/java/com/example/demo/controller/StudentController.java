@@ -13,8 +13,8 @@ public class StudentController{
         return ser.postdata(stu);//to ser calling the service layer
     }
     @GetMapping("/get")
-    public StudentEntity getData1(@RequestBody StudentEntity stu){
-        return ser.getdata(stu);//to ser calling the service layer
+    public StudentEntity getData1(){
+        return ser.getdata();
     }
 
 
