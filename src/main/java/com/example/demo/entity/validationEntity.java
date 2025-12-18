@@ -37,7 +37,7 @@ public class validationEntity{
      public void setPassword(String password){
         this.password=password;
     }
-    public void setAge(int Age){
+    public void setAge(int age){
         this.age=age;
     }
     public Long getId(){
