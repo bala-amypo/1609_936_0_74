@@ -33,8 +33,4 @@ public class StudentController{
     public String putupdateData(@PathVariable int id,@RequestBody StudentEntity stu){
         return ser.putupdatedata(id,stu);
     }
-
-
-
-
 }
