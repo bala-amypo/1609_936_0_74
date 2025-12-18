@@ -18,6 +18,10 @@ public class StudentController{
     public List<StudentEntity> getData(){
         return ser.getdata();
     }
+    @DeleteMapping("/post")
+    public StudentEntity sendData(@RequestBody StudentEntity stu){
+        return ser.postdata(stu);//to ser calling the service layer
+    }
 
 
 }
