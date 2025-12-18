@@ -17,20 +17,20 @@ public class validationController{
     public validationEntity sendData(@RequestBody validationEntity val){
         return serv.postdata(val);//to ser calling the service layer
     }
-    @GetMapping("/get1")
-    public List<validationEntity> getData(){
-        return serv.getdata();
-    }
-    @DeleteMapping("/del/{id}2")
-    public String DeleteData(@PathVariable int id){
-        return serv.deletedata(id);
-    }
-    @GetMapping("/putget/{id}2")
-    public validationEntity putgetData(@PathVariable int id){  
-        return serv.putgetdata(id);
-    }
-    @PutMapping("/putupdate/{id}2")
-    public validationEntity putupdateData(@PathVariable int id,@RequestBody validationEntity vali){
-        return serv.putupdatedata(id,vali);
-    }
-}
+//     @GetMapping("/get2")
+//     public List<validationEntity> getData(){
+//         return serv.getdata();
+//     }
+//     @DeleteMapping("/del/{id}2")
+//     public String DeleteData(@PathVariable int id){
+//         return serv.deletedata(id);
+//     }
+//     @GetMapping("/putget/{id}2")
+//     public validationEntity putgetData(@PathVariable int id){  
+//         return serv.putgetdata(id);
+//     }
+//     @PutMapping("/putupdate/{id}2")
+//     public validationEntity putupdateData(@PathVariable int id,@RequestBody validationEntity vali){
+//         return serv.putupdatedata(id,vali);
+//     }
+// }
