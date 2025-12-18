@@ -25,7 +25,7 @@ public class StudentController{
     public String DeleteData(@PathVariable int id){
         return ser.deletedata(id);
     }
-    @PutMapping("/put/{id}")
+    @GetMapping("/putget/{id}")
     public StudentEntity putgetData(@PathVariable int id){
         return ser.putgetdata(id);
     }
