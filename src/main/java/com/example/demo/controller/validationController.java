@@ -19,17 +19,17 @@ public class validationController{
         return ser.postdata(stu);
     }
 }
-//     @GetMapping("/get2")
-//     public List<validationEntity> getData(){
-//         return serv.getdata();
-//     }
+    // @GetMapping("/get2")
+    // public List<validationEntity> getData(){
+    //    return ser.getdata();
+    // }
 //     @DeleteMapping("/del/{id}2")
 //     public String DeleteData(@PathVariable int id){
 //         return serv.deletedata(id);
 //     }
-//     @GetMapping("/putget/{id}2")
-//     public validationEntity putgetData(@PathVariable int id){  
-//         return serv.putgetdata(id);
+      @GetMapping("/putget/{id}2")
+    public validationEntity putgetData(@PathVariable int id){  
+       return ser.putgetdata(id);
 //     }
 //     @PutMapping("/putupdate/{id}2")
 //     public validationEntity putupdateData(@PathVariable int id,@RequestBody validationEntity vali){
