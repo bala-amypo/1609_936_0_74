@@ -22,17 +22,17 @@ public class validationServiceimpl implements validationService{
         return valid.findAll();
     }
     @Override
-    public String deletedata(int id){
+    public String deletedata(long id){
         valid.deleteById(id);
         return "deleted successfully";
     }
     @Override
-    public validationEntity putgetdata(int id){
+    public validationEntity putgetdata(long id){
        return valid.findById(id).orElse(null);
     
     }
     @Override
-    public validationEntity putupdatedata(int id,validationEntity std){
+    public validationEntity putupdatedata(long id,validationEntity std){
         if(valid.existsById(id)){//checking where it isprsent or not in spfici row
             std.setId(id);//settting the value to that roe
             return valid.save(std);//return the value
