@@ -32,9 +32,10 @@ public class StudentServiceimpl implements StudentService{
     
     }
     @Override
-    public StudentEntity putudatedata(int id,StudentEntity stu){
-        student.save(id,stu);
-        return stu;
+    public StudentEntity putupdatedata(int id,StudentEntity stu){
+        if(student.existsById(id)){
+            stu.setId(id)
+        }
     }
    
 

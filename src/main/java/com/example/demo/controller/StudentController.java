@@ -29,6 +29,8 @@ public class StudentController{
     public StudentEntity putgetData(@PathVariable int id){
         return ser.putgetdata(id);
     }
+    @PutMapping("/putupdate/{id}")
+    
 
 
 }
