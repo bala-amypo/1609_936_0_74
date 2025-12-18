@@ -56,7 +56,8 @@ public class validationEntity{
     public int Age(){
         return age;
     }
-    public StudentEntity(Long id,@NotNull
+    public StudentEntity(Long id,
+    @NotNull
     @Size(min=2,max=6,message="Must be 2 to 6 characters") String username,
     @Email(message="email is not valid")String email,
     @Size(min=2,max=10)
