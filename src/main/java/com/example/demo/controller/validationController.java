@@ -18,6 +18,7 @@ public class validationController{
     public validationEntity sendData(@Valid @RequestBody validationEntity stu){
         return ser.postdata(stu);
     }
+}
 //     @GetMapping("/get2")
 //     public List<validationEntity> getData(){
 //         return serv.getdata();
