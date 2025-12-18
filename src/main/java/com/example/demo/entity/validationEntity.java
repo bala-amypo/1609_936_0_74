@@ -57,7 +57,11 @@ public class validationEntity{
         return age;
     }
     public StudentEntity(Long id,@NotNull
-    @Size(min=2,max=6,message="Must be 2 to 6 characters") String username, String email,String password,int age){
+    @Size(min=2,max=6,message="Must be 2 to 6 characters") String username,@Email(message="email is not valid")
+     String email,@Size(min=2,max=10)
+    @NotNull(message="Password is mandatory") String password, @Max(30)
+    @Postive(message="Age should be in Postive number")
+    @NotNull(message="Password is mandatory") int age){
         this.username=username;
         this.email=email;
         this.password=password;
