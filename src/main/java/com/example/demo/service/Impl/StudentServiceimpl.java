@@ -31,5 +31,11 @@ public class StudentServiceimpl implements StudentService{
        return student.findById(id).orElse(null);
     
     }
+    @Override
+    public StudentEntity putudatedata(int id,StudentEntity stu){
+        student.save(id,stu);
+        return stu;
+    }
+   
 
 }
