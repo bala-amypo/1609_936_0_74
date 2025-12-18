@@ -53,7 +53,7 @@ public class validationEntity{
         return password;
     }
    
-    public int Age(){
+    public int getAge(){
         return age;
     }
     public validationEntity(Long id,
