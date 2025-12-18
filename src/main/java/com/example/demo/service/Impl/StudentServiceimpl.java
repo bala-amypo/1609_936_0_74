@@ -5,7 +5,6 @@ import com.example.demo.service.StudentService;
 import com.example.demo.repository.StudentRepository;
 import com.example.demo.entity.StudentEntity;
 import java.util.List;
-
 @Service
 public class StudentServiceimpl implements StudentService{
    @Autowired StudentRepository student;//  acces the method in diff files
@@ -19,7 +18,7 @@ public class StudentServiceimpl implements StudentService{
         return student.save(stu);
     }
     @Override
-    public <List>StudentEntity postdata(){
+    public List<StudentEntity> postdata(){
         return student.findAll();
     }
 
