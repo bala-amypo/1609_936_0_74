@@ -32,10 +32,10 @@ public class StudentServiceimpl implements StudentService{
     
     }
     @Override
-    public StudentEntity putupdatedata(int id,StudentEntity stu){
+    public StudentEntity putupdatedata(int id,StudentEntity std){
         if(student.existsById(id)){//checking where it isprsent or not in spfici row
-            stu.setId(id);//settting the value to that roe
-            return student.save(stu);//return the value
+            std.setId(id);//settting the value to that roe
+            return student.save(std);//return the value
         }
         return null;
     }
