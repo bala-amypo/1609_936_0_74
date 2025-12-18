@@ -18,13 +18,13 @@ public class validationEntity{
     private String username;
     @Email(message="email is not valid")
     private String email;
-    @Max(6)
+    @Size(min=2,max=10)
     @NotNull(message="Password is mandatory")
     private String password;
     @Max(30)
     @Postive(message="Age should be in Postive number")
     @NotNull(message="Password is mandatory")
-    private Interger age;
+    private int age;
     public void setId(Long id){
         this.id=id;
     }
@@ -53,10 +53,11 @@ public class validationEntity{
         return password;
     }
    
-    public Integer Age(){
+    public int Age(){
         return age;
     }
-    public StudentEntity(Long id,String username,String email,String password,Interger age){
+    public StudentEntity(Long id,@NotNull
+    @Size(min=2,max=6,message="Must be 2 to 6 characters") String username, String email,String password,int age){
         this.username=username;
         this.email=email;
         this.password=password;
