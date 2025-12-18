@@ -7,6 +7,7 @@ import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Size;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.Max;
+import jakarta.validation.constraints.Postive;
 @Entity
 public class validationEntity{
     @Id
@@ -18,7 +19,11 @@ public class validationEntity{
     @Email(message="email is not valid")
     private String email;
     @Max(6)
+    @NotNull(message="Password is mandatory")
     private String password;
+    @Max(30)
+    @Postive(message="Age should be in Postive number")
+    @NotNull(message="Password is mandatory")
     private Interger age;
     public void setId(Long id){
         this.id=id;
@@ -33,7 +38,7 @@ public class validationEntity{
         this.password=password;
     }
     public void setAge(Integer Age){
-        this.createdAt=createdAt;
+        this.age=age;
     }
     public Long getId(){
         return id;
@@ -48,14 +53,14 @@ public class validationEntity{
         return password;
     }
    
-    public Age Age(){
-        return createdAt;
+    public Integer Age(){
+        return age;
     }
-    public StudentEntity(Integer id,String username,String email,String password,Interger Age){
+    public StudentEntity(Long id,String username,String email,String password,Interger age){
         this.username=username;
         this.email=email;
         this.password=password;
-        this.createdAt=createdAt;
+        this.age=age;
     }
     public StudentEntity(){
 
