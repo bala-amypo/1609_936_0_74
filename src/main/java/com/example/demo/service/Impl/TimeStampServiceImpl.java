@@ -16,15 +16,7 @@ public class TimeStampServiceImpl implements TimeStampService {
     private TimeStampRepository tp;
 
     @Override
-    public TimeStampEntity postData(TimeStampEntity stu) {
-        stu.setCreatedAt(LocalDateTime.now());
-        stu.setUpdatedAt(LocalDateTime.now());
+    public TimeStampEntity postData2(TimeStampEntity stu) {
         return tp.save(stu);
-    }
-
-    @Override
-    public TimeStampEntity getById(long id) {
-        return tp.findById(id)
-                .orElseThrow(() -> new RuntimeException("ID not found"));
     }
 }
