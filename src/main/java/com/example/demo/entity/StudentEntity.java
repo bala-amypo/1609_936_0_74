@@ -5,13 +5,13 @@ import jakarta.persistence.Id;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import lombok.Data;
-import lombok.AllAgrsConstructor;
+import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
 // import lombok.Setter;
 // import lombok.Getter;
 @Entity
 @Data
-@AllAgrsConstructor
+@AllArgsConstructor
 @NoArgsConstructor
 // @Setter
 // @Getter
