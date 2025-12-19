@@ -1,11 +1,10 @@
 package com.example.demo.service;
-import com.example.demo.entity.TimeStampEntity;
-import java.util.List;
 
-public interface TimeStampService{
-    TimeStampSEntity postdata(TimeStamEntity stu);
-    // List<validationEntity>getdata();
-    // String deletedata(long id);
-   TimeStamEntity putgetdata(long id);
-    // validationEntity putupdatedata(long id,validationEntity std);
+import com.example.demo.entity.TimeStampEntity;
+
+public interface TimeStampService {
+
+    TimeStampEntity postData(TimeStampEntity stu);
+
+    TimeStampEntity getById(long id);
 }
