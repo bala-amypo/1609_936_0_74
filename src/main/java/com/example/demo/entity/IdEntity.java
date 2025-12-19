@@ -7,6 +7,8 @@ import jakarta.persistence.GenerationType;
 import lombok.Data;
 import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
+import jakarta.persistence.JoinColum;
+import jakarta.persistence.GenerationType;
 // import lombok.Setter;
 // import lombok.Getter;
 @Entity
@@ -23,7 +25,8 @@ public class StudentEntity{
     private int cardno;
     private String email;
     private int student_id;
-    private St
+    @OneToOne
+    private StudentId student;
    
 
 }
