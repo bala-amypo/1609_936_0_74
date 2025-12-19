@@ -11,14 +11,14 @@ import jakarta.validation.constraints.Positive;
 import lombok.Data;
 import lombok.AllAgrsConstructor;
 import lombok.NoArgsConstructor;
-import lombok.Setter;
-import lombok.Getter;
+// import lombok.Setter;
+// import lombok.Getter;
 @Entity
 @Data
 @AllAgrsConstructor
 @NoArgsConstructor
-@Setter
-@Getter
+
+
 public class validationEntity{
     @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)

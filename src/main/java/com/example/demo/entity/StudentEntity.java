@@ -7,13 +7,13 @@ import jakarta.persistence.GenerationType;
 import lombok.Data;
 import lombok.AllAgrsConstructor;
 import lombok.NoArgsConstructor;
-import lombok.Setter;
-import lombok.Getter;
+// import lombok.Setter;
+// import lombok.Getter;
 @Entity
 @Data
 @AllAgrsConstructor
 @NoArgsConstructor
-@Setter
+// @Setter
 @Getter
 @Entity
 public class StudentEntity{
