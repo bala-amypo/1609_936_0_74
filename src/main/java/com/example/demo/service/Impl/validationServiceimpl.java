@@ -18,27 +18,8 @@ public class validationServiceimpl implements validationService{
         return valid.save(stu);
     }
     @Override
-    public List<validationEntity>getdata(){
-        return valid.findAll();
-    }
-    @Override
-    public String deletedata(long id){
-        valid.deleteById(id);
-        return "deleted successfully";
-    }
-    @Override
     public validationEntity putgetdata(long id){
-       return valid.findById(id);
+       return valid.findById(id).orElse()->new ;
     
     }
-    @Override
-    public validationEntity putupdatedata(long id,validationEntity std){
-        if(valid.existsById(id)){//checking where it isprsent or not in spfici row
-            std.setId(id);//settting the value to that roe
-            return valid.save(std);//return the value
-        }
-        return null;
-    }
    
-
-}
