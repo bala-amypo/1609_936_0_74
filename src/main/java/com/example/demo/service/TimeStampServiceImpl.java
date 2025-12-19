@@ -1,9 +1,9 @@
 package com.example.demo.service.Impl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import com.example.demo.service.validationService;
-import com.example.demo.repository.validationRepository;
-import com.example.demo.entity.Entity;
+import com.example.demo.service..TimeStampService;
+import com.example.demo.repository..TimeStampRepository;
+import com.example.demo.entity..TimeStampEntity;
 import com.example.demo.exception.TimeStampException;
 import java.util.List;
 @Service
