@@ -4,8 +4,8 @@ import java.util.List;
 
 public interface validationService{
     validationEntity postdata(validationEntity stu);
-    List<validationEntity>getdata();
-    String deletedata(long id);
+    // List<validationEntity>getdata();
+    // String deletedata(long id);
    validationEntity putgetdata(long id);
-    validationEntity putupdatedata(long id,validationEntity std);
+    // validationEntity putupdatedata(long id,validationEntity std);
 }
