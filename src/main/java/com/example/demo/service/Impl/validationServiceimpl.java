@@ -4,6 +4,7 @@ import org.springframework.stereotype.Service;
 import com.example.demo.service.validationService;
 import com.example.demo.repository.validationRepository;
 import com.example.demo.entity.validationEntity;
+import com.example.demo.exception.validationEntity;
 import java.util.List;
 @Service
 public class validationServiceimpl implements validationService{
@@ -19,7 +20,7 @@ public class validationServiceimpl implements validationService{
     }
     @Override
     public validationEntity putgetdata(long id){
-       return valid.findById(id).orElse()->new ;
+       return valid.findById(id).orElse()->new validationException("Invalid id"+id);
     
     }
    
