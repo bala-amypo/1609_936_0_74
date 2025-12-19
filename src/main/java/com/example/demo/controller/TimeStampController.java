@@ -20,6 +20,6 @@ public class TimeStampController {
 
     @PostMapping("/post3")
     public TimeStampEntity sendData(@Valid @RequestBody TimeStampEntity stu) {
-        return ser.postData(stu);
+        return ser.postData2(stu);
     }
 }
