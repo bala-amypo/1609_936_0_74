@@ -8,7 +8,7 @@ import lombok.Data;
 import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
 import jakarta.persistence.JoinColum;
-import jakarta.persistence.GenerationType;
+import jakarta.persistence.OneToOne;
 // import lombok.Setter;
 // import lombok.Getter;
 @Entity
@@ -24,8 +24,9 @@ public class StudentEntity{
     private Integer id;
     private int cardno;
     private String email;
-    private int student_id;
+    //private int student_id;
     @OneToOne
+    @JoinColumn(name="student_id")
     private StudentId student;
    
 
