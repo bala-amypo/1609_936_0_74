@@ -27,7 +27,7 @@ public class validationController{
 //     public String DeleteData(@PathVariable int id){
 //         return serv.deletedata(id);
 //     }
-      @GetMapping("/putget/{id}2")
+      @GetMapping("/putget2/{id}")
     public validationEntity putgetData(@PathVariable int id){  
        return ser.putgetdata(id);
 //     }
