@@ -8,7 +8,7 @@ import org.springbootframework.web.bind.annotation.ResponseBody;
 public class GlobalException{
     @ExceptionHandler(validationException.class)
     public ResponseBody<String>handlerValidation(validationException ex){
-        return new ResponseBody<String>(ex.);
+        return new ResponseBody<String>(ex.getMessage(),HttpStatus.BAD_GATEWAY);
 
     }
 }
