@@ -4,7 +4,7 @@ import org.springframework.stereotype.Service;
 import com.example.demo.service.validationService;
 import com.example.demo.repository.validationRepository;
 import com.example.demo.entity.validationEntity;
-import com.example.demo.exception.validationEntity;
+import com.example.demo.exception.validationexception;
 import java.util.List;
 @Service
 public class validationServiceimpl implements validationService{
