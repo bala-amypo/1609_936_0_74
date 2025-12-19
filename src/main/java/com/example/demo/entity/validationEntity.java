@@ -9,6 +9,11 @@ import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.Min;
 import jakarta.validation.constraints.Positive;
 @Entity
+@Data
+@AllAgrsConstructor
+@NoArgsConstructor
+@Setter
+@Getter
 public class validationEntity{
     @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
@@ -25,5 +30,5 @@ public class validationEntity{
     @Positive(message="Age should be in Postive number")
     @NotNull(message="Password is mandatory")
     private int age;
-    
+
 }
