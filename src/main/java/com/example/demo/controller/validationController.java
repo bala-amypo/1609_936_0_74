@@ -28,7 +28,7 @@ public class validationController{
 //         return serv.deletedata(id);
 //     }
       @GetMapping("/putget2/{id}")
-    public validationEntity putgetData(@PathVariable int id){  
+    public validationEntity putgetData(@PathVariable Long id){  
        return ser.putgetdata(id);
 //     }
 //     @PutMapping("/putupdate/{id}2")

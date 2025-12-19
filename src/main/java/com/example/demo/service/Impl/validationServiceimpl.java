@@ -20,7 +20,7 @@ public class validationServiceimpl implements validationService{
     }
     @Override
     public validationEntity putgetdata(long id){
-       return valid.findById(id).orElse()->new validationException("Invalid id"+id);
+       return valid.findById(id).orElse(()->new validationException("Invalid id"+id));
     
     }
 }
