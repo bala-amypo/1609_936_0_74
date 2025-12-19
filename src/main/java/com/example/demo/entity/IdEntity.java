@@ -23,6 +23,7 @@ public class StudentEntity{
     private int cardno;
     private String email;
     private int student_id;
+    private St
    
 
 }
